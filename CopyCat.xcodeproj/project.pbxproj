@@ -107,6 +107,9 @@
 			);
 			mainGroup = 975275C32DB1E68700B2E23F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				97DED4862DB1F7AC007B4BEB /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 975275CD2DB1E68700B2E23F /* Products */;
 			projectDirPath = "";
@@ -333,6 +336,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		97DED4862DB1F7AC007B4BEB /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 975275C42DB1E68700B2E23F /* Project object */;
 }
