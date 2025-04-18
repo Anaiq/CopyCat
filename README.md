@@ -60,7 +60,7 @@ Tab Navigation (Tab to Screen)
 - Game
   
 Flow Navigation (Screen to Screen)
-
+<img width="1341" alt="flow" src="https://github.com/user-attachments/assets/11a1cd02-b99b-4a21-a24c-3228c53e35b1" />
 
 Login/Start => Home  
 
@@ -78,13 +78,13 @@ Game Over - Lose => Home
 Hand sketched wireframes:
 |  Login/Start  | Home/Rules/Settings Page | Game  | Game Over - Win  | Game Over - Lose |
 | -------- | -------- | ----------- | ---------- | ------------- | 
-| <img width="376" alt="Screenshot 2025-04-15 at 21 59 19" src="https://github.com/user-attachments/assets/4d4c26a0-953f-4f18-a5c9-be52766de95d" /> |  <img width="381" alt="Screenshot 2025-04-15 at 21 59 36" src="https://github.com/user-attachments/assets/1fc5a42b-3a5e-4703-befa-7a2bc3f1a6a4" /> | <img width="390" alt="Screenshot 2025-04-15 at 21 59 42" src="https://github.com/user-attachments/assets/fe4f2c52-ce86-4312-bedd-2aa86db3e1ce" /> | <img width="384" alt="Screenshot 2025-04-15 at 21 59 47" src="https://github.com/user-attachments/assets/86250dff-e197-48ff-ac22-fde411c93f61" /> |  <img width="400" alt="Screenshot 2025-04-15 at 22 00 05" src="https://github.com/user-attachments/assets/d1aaa3f2-b13c-4623-a874-43a833b06ae0" /> |
+|  <img width="376" alt="sketched start" src="https://github.com/user-attachments/assets/65bd063d-b77e-4adc-8ac0-d59c6183e1ef" /> | <img width="381" alt="sketched rules" src="https://github.com/user-attachments/assets/f031563b-3b80-4b8a-99e4-242a920cefe9" /> | <img width="390" alt="sketched play" src="https://github.com/user-attachments/assets/8fd3cfb8-0487-496b-8a9e-15547a58f3e0" />  | <img width="384" alt="sketched win" src="https://github.com/user-attachments/assets/db049877-f823-4043-8dcc-52f515872b58" />   |  <img width="359" alt="sketched lose" src="https://github.com/user-attachments/assets/e20ba55f-fe38-49b9-b8e3-10cd1c64d8eb" />  |
 
 
 [BONUS] Digital Wireframes & Mockups: 
 |  Login/Start  | Home/Rules/Settings Page | Game  | Game Over - Win  | Game Over - Lose |
 | -------- | -------- | ----------- | ---------- | ------------- | 
-|<img width="385" alt="Screenshot 2025-04-15 at 16 29 29" src="https://github.com/user-attachments/assets/a4da299e-4bde-4dca-9888-f9ef8c077a41" />   | <img width="386" alt="Screenshot 2025-04-15 at 16 29 37" src="https://github.com/user-attachments/assets/6dddb560-100b-4263-8aa2-42ac2e4cee37" />  | <img width="385" alt="Screenshot 2025-04-15 at 22 04 17" src="https://github.com/user-attachments/assets/17a4bad5-4923-4a85-8bbc-c249d88ca5af" /> | <img width="384" alt="Screenshot 2025-04-15 at 16 29 59" src="https://github.com/user-attachments/assets/c99dc3f5-f41d-4d90-8f58-ca11fbc0d496" />  | <img width="385" alt="Screenshot 2025-04-15 at 16 30 15" src="https://github.com/user-attachments/assets/faaf6817-7f6c-4738-9658-31869de14280" />  | 
+| <img width="385" alt="WF start" src="https://github.com/user-attachments/assets/f3cd5856-32c8-4fcb-a45b-f9fe66ff2ae5" />  |  <img width="385" alt="WF rules" src="https://github.com/user-attachments/assets/b9c352bf-8215-44da-9b8a-a2cdbb57dc22" />  |  <img width="385" alt="WF game" src="https://github.com/user-attachments/assets/7986281c-0d3c-4660-8f41-2f5d41693c3f" />  | <img width="384" alt="WF win" src="https://github.com/user-attachments/assets/8b4ca488-c58c-4585-9449-1dc5d984938a" />  | <img width="385" alt="WF lose" src="https://github.com/user-attachments/assets/94805561-c880-42ee-8528-ec5a996fb427" />   | 
 
 <hr> 
 
