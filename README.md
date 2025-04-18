@@ -60,7 +60,7 @@ Tab Navigation (Tab to Screen)
 - Game
   
 Flow Navigation (Screen to Screen)
-<img width="1361" alt="Screenshot 2025-04-15 at 12 49 34" src="https://github.com/user-attachments/assets/77b38918-1886-43e6-b62f-cb5d8a34fbd8" />
+/Users/Qiana/Desktop/flow.png
 
 Login/Start => Home  
 
