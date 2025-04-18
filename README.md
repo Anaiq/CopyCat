@@ -60,7 +60,7 @@ Tab Navigation (Tab to Screen)
 - Game
   
 Flow Navigation (Screen to Screen)
-/Users/Qiana/Desktop/flow.png
+
 
 Login/Start => Home  
 
