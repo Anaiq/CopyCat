@@ -52,6 +52,7 @@ class RulesViewController: UIViewController {
         print("\( String(describing: _sender.titleLabel) ) Button Selected.")
         
         easyButton.tintColor = easyButton.isSelected ? .systemYellow : .lightGray
+        
         hardButton.tintColor = hardButton.isSelected ? .systemYellow : .lightGray
     }
     
