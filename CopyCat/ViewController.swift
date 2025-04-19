@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     @IBAction func didPushPlay(_ sender: UIButton) {
         print("Pushed the play button!!")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let gameVC = storyboard.instantiateViewController(withIdentifier: "GameViewController")
-        gameVC.modalPresentationStyle = .fullScreen
-        present(gameVC, animated: true, completion: nil)
+        let tabBC = storyboard.instantiateViewController(withIdentifier: "tabBarController")
+        tabBC.modalPresentationStyle = .fullScreen
+        present(tabBC, animated: true, completion: nil)
     }
     
 }
