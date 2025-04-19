@@ -19,6 +19,8 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        view.backgroundColor = .white // Or whatever your game background is
+        self.navigationItem.hidesBackButton = true
     }
     
 

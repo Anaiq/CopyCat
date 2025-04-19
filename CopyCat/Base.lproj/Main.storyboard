@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gmw-fn-1Gw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -17,15 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copy Cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHs-Xc-qA3">
-                                <rect key="frame" x="94" y="147" width="205" height="57.333333333333343"/>
+                                <rect key="frame" x="94" y="147" width="205" height="58"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqY-9M-tKI">
-                                <rect key="frame" x="157" y="706" width="79" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqY-9M-tKI" userLabel="play Button">
+                                <rect key="frame" x="170" y="705.66666666666663" width="53" height="35"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" image="pawprint.fill" catalog="system" imagePlacement="trailing" title="">
@@ -35,9 +34,8 @@
                                     <action selector="didPushPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9NQ-xr-LfM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9N-ky-8TL">
-                                <rect key="frame" x="170" y="749" width="55" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9N-ky-8TL">
+                                <rect key="frame" x="169" y="748.66666666666663" width="55" height="36"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -98,7 +96,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteWithPatchCat" translatesAutoresizingMaskIntoConstraints="NO" id="oQn-H1-otj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onePatchCatLeft" translatesAutoresizingMaskIntoConstraints="NO" id="oQn-H1-otj">
                                 <rect key="frame" x="79" y="323.66666666666669" width="235" height="205.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="205" id="Ydk-Dg-D6b"/>
@@ -109,12 +107,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pHs-Xc-qA3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="Chp-pz-XDA"/>
+                            <constraint firstItem="U9N-ky-8TL" firstAttribute="top" secondItem="TqY-9M-tKI" secondAttribute="bottom" constant="8" id="G3R-5A-VaL"/>
                             <constraint firstItem="oQn-H1-otj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HBl-oh-q7y"/>
+                            <constraint firstItem="TqY-9M-tKI" firstAttribute="top" secondItem="oQn-H1-otj" secondAttribute="bottom" constant="177.33000000000001" id="Lfr-Ih-VOo"/>
+                            <constraint firstItem="pHs-Xc-qA3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="Qxy-62-f1k"/>
                             <constraint firstItem="oQn-H1-otj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xtk-22-hAG"/>
+                            <constraint firstItem="U9N-ky-8TL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bJl-5W-98o"/>
                             <constraint firstItem="pHs-Xc-qA3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bQc-Us-Ijg"/>
-                            <constraint firstItem="oQn-H1-otj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cg6-57-epf"/>
-                            <constraint firstItem="oQn-H1-otj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uvp-a6-0zN"/>
+                            <constraint firstItem="TqY-9M-tKI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8Q-fb-Twn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V4v-dU-QNb"/>
@@ -124,12 +124,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2917" y="-703"/>
+            <point key="canvasLocation" x="2917" y="-746"/>
         </scene>
-        <!--Game View Controller-->
+        <!--GameViewController-->
         <scene sceneID="uBY-CW-zaA">
             <objects>
-                <viewController id="R1U-Qc-PHq" customClass="GameViewController" customModule="CopyCat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="R1U-Qc-PHq" userLabel="GameViewController" customClass="GameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XxZ-j7-NZt">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,7 +206,7 @@
                                 <rect key="frame" x="43" y="334" width="153" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onePatchCat" translatesAutoresizingMaskIntoConstraints="NO" id="nNX-Wc-0Rt">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onePatchCatRight" translatesAutoresizingMaskIntoConstraints="NO" id="nNX-Wc-0Rt">
                                 <rect key="frame" x="43" y="462" width="153" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -224,9 +224,6 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="replaySequenceButton"/>
-                                <connections>
-                                    <action selector="didPushReplayButton:" destination="R1U-Qc-PHq" eventType="touchUpInside" id="uT3-8F-I41"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="replayIndex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgZ-H9-2Zb">
                                 <rect key="frame" x="154" y="688" width="88" height="21"/>
@@ -250,19 +247,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="icw-nt-g7P"/>
-                    <connections>
-                        <outlet property="replayIndex" destination="MgZ-H9-2Zb" id="Afp-KK-JsQ"/>
-                        <outlet property="replaySequenceButton" destination="flT-Uf-HqB" id="jW2-gl-op2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5n-hs-cI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2916.7938931297708" y="-2.1126760563380285"/>
         </scene>
-        <!--Rules View Controller-->
+        <!--RulesViewController-->
         <scene sceneID="HRY-aI-WXS">
             <objects>
-                <viewController id="zw6-Jf-lAr" customClass="RulesViewController" customModule="CopyCat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RulesViewController" id="zw6-Jf-lAr" userLabel="RulesViewController" customClass="RulesViewController" customModule="CopyCat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hlp-t2-xaj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,7 +288,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="R1U-Qc-PHq" kind="relationship" relationship="rootViewController" id="ugg-aq-Ayq"/>
+                        <segue destination="R1U-Qc-PHq" kind="relationship" relationship="rootViewController" id="iQ9-Cg-Qhw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFG-IL-LE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -308,6 +301,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gmw-fn-1Gw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bHa-Nf-XJu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -343,12 +337,12 @@
     <resources>
         <image name="brownCat" width="152" height="129.33332824707031"/>
         <image name="checklist.checked" catalog="system" width="128" height="107"/>
-        <image name="grayCat" width="142" height="120"/>
-        <image name="onePatchCat" width="143.33332824707031" height="123.33333587646484"/>
+        <image name="grayCat" width="156" height="135.33332824707031"/>
+        <image name="onePatchCatLeft" width="160.66667175292969" height="133.33332824707031"/>
+        <image name="onePatchCatRight" width="143.33332824707031" height="123.33333587646484"/>
         <image name="pawprint.circle.fill" catalog="system" width="128" height="123"/>
         <image name="pawprint.fill" catalog="system" width="128" height="112"/>
         <image name="twoPatchCat" width="152" height="136"/>
-        <image name="whiteWithPatchCat" width="160.66667175292969" height="133.33332824707031"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

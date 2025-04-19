@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Screenshot 2025-04-17 at 22.40.57.png",
+      "filename" : "grayCat.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Screenshot 2025-04-17 at 22.40.57 1.png",
+      "filename" : "grayCat 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Screenshot 2025-04-17 at 22.40.57 2.png",
+      "filename" : "grayCat 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
