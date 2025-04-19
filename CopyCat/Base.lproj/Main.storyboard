@@ -233,20 +233,6 @@
                                 <rect key="frame" x="196" y="462" width="153" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flT-Uf-HqB">
-                                <rect key="frame" x="97" y="639" width="198" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="replaySequenceButton"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="replayIndex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgZ-H9-2Zb">
-                                <rect key="frame" x="154" y="688" width="88" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eNp-w4-ChH">
                                 <rect key="frame" x="252" y="247.66666666666663" width="33" height="33"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
@@ -255,6 +241,20 @@
                                     <constraint firstAttribute="width" constant="33" id="eRO-5o-vZZ"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flT-Uf-HqB">
+                                <rect key="frame" x="79" y="637" width="114" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="See it Again"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="replayIndex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgZ-H9-2Zb">
+                                <rect key="frame" x="225" y="644" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PYK-vm-Vv4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -284,6 +284,118 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5n-hs-cI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2916.7938931297708" y="-42.253521126760567"/>
+        </scene>
+        <!--Game Over ControllerL-->
+        <scene sceneID="hHZ-qX-Zau">
+            <objects>
+                <viewController id="UST-Z5-lvn" customClass="GameOverControllerL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cEb-i4-7ym">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uh-Oh!  You made a Meow-Stake!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbB-fe-xj5">
+                                <rect key="frame" x="16" y="101" width="361" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ch8-aA-2SG"/>
+                                    <constraint firstAttribute="width" constant="361" id="ue1-Wk-k6O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-RZ-Zwe">
+                                <rect key="frame" x="131.66666666666666" y="686" width="129.99999999999997" height="35"/>
+                                <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="pawprint.fill" catalog="system" title="Play again"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loser" translatesAutoresizingMaskIntoConstraints="NO" id="nQb-ox-z67">
+                                <rect key="frame" x="13.666666666666657" y="267.66666666666669" width="366" height="317.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="366" id="1Lp-Ha-EPX"/>
+                                    <constraint firstAttribute="height" constant="317" id="BNR-td-vrQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Lost." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WH3-MC-yqf">
+                                <rect key="frame" x="133.66666666666666" y="579" width="125.66666666666666" height="38.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ij3-WW-PUC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dhk-RZ-Zwe" firstAttribute="centerX" secondItem="cEb-i4-7ym" secondAttribute="centerX" id="4nR-Cn-emB"/>
+                            <constraint firstItem="WH3-MC-yqf" firstAttribute="top" secondItem="jbB-fe-xj5" secondAttribute="bottom" constant="378" id="LS7-x7-wWG"/>
+                            <constraint firstItem="nQb-ox-z67" firstAttribute="centerY" secondItem="cEb-i4-7ym" secondAttribute="centerY" id="bie-Uf-RTY"/>
+                            <constraint firstItem="jbB-fe-xj5" firstAttribute="centerX" secondItem="cEb-i4-7ym" secondAttribute="centerX" id="dvV-MM-YCy"/>
+                            <constraint firstItem="nQb-ox-z67" firstAttribute="centerX" secondItem="cEb-i4-7ym" secondAttribute="centerX" id="lu4-kU-G23"/>
+                            <constraint firstItem="jbB-fe-xj5" firstAttribute="top" secondItem="ij3-WW-PUC" secondAttribute="top" constant="42" id="nAu-EE-DGq"/>
+                            <constraint firstItem="Dhk-RZ-Zwe" firstAttribute="top" secondItem="WH3-MC-yqf" secondAttribute="bottom" constant="68.670000000000002" id="ua6-I6-Fea"/>
+                            <constraint firstItem="WH3-MC-yqf" firstAttribute="centerX" secondItem="cEb-i4-7ym" secondAttribute="centerX" id="wTb-Os-kvF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNp-gD-ARQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3977.8625954198474" y="-31.690140845070424"/>
+        </scene>
+        <!--Game Over ControllerW-->
+        <scene sceneID="BBX-zL-nAm">
+            <objects>
+                <viewController id="1VW-Eq-9r5" customClass="GameOverControllerW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7u8-kT-shl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puuuuurrrrrfect!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQd-YT-GJh">
+                                <rect key="frame" x="16" y="101" width="361" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="YaI-It-JCT"/>
+                                    <constraint firstAttribute="width" constant="361" id="p7H-jJ-M9W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winner" translatesAutoresizingMaskIntoConstraints="NO" id="t65-hg-DWA">
+                                <rect key="frame" x="13.666666666666657" y="267.66666666666669" width="366" height="317.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="317" id="MfI-gd-hB1"/>
+                                    <constraint firstAttribute="width" constant="366" id="j54-Zn-GKt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Win!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyQ-J3-tq1">
+                                <rect key="frame" x="135.66666666666666" y="579" width="121.99999999999997" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z0-ei-WAU">
+                                <rect key="frame" x="131.66666666666666" y="687" width="129.99999999999997" height="35"/>
+                                <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="pawprint.fill" catalog="system" title="Play again"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WvM-1h-89N"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1z0-ei-WAU" firstAttribute="top" secondItem="PyQ-J3-tq1" secondAttribute="bottom" constant="68.870000000000005" id="EDD-oz-SEv"/>
+                            <constraint firstItem="qQd-YT-GJh" firstAttribute="centerX" secondItem="7u8-kT-shl" secondAttribute="centerX" id="Ekh-iJ-Enl"/>
+                            <constraint firstItem="PyQ-J3-tq1" firstAttribute="centerX" secondItem="7u8-kT-shl" secondAttribute="centerX" id="Rkk-ca-Q4z"/>
+                            <constraint firstItem="1z0-ei-WAU" firstAttribute="centerX" secondItem="7u8-kT-shl" secondAttribute="centerX" id="YHu-5J-OpB"/>
+                            <constraint firstItem="t65-hg-DWA" firstAttribute="centerY" secondItem="7u8-kT-shl" secondAttribute="centerY" id="f37-p6-yb3"/>
+                            <constraint firstItem="t65-hg-DWA" firstAttribute="centerX" secondItem="7u8-kT-shl" secondAttribute="centerX" id="geh-Jk-aXo"/>
+                            <constraint firstItem="PyQ-J3-tq1" firstAttribute="top" secondItem="qQd-YT-GJh" secondAttribute="bottom" constant="378" id="pK7-48-ci3"/>
+                            <constraint firstItem="qQd-YT-GJh" firstAttribute="top" secondItem="WvM-1h-89N" secondAttribute="top" constant="42" id="pjN-HY-Xeh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TWE-Ls-An7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4726" y="-32"/>
         </scene>
         <!--RulesViewController-->
         <scene sceneID="HRY-aI-WXS">
@@ -479,11 +591,13 @@
         <image name="brownCat" width="152" height="129.33332824707031"/>
         <image name="checklist.checked.rtl" catalog="system" width="128" height="107"/>
         <image name="grayCat" width="156" height="135.33332824707031"/>
+        <image name="loser" width="356" height="352.66665649414062"/>
         <image name="onePatchCatLeft" width="160.66667175292969" height="133.33332824707031"/>
         <image name="onePatchCatRight" width="143.33332824707031" height="123.33333587646484"/>
         <image name="pawprint.circle.fill" catalog="system" width="128" height="123"/>
         <image name="pawprint.fill" catalog="system" width="128" height="112"/>
         <image name="twoPatchCat" width="152" height="136"/>
+        <image name="winner" width="351.33334350585938" height="301.33334350585938"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
