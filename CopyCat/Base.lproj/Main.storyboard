@@ -161,13 +161,13 @@
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="ZgA-Ym-a23"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brownCat" translatesAutoresizingMaskIntoConstraints="NO" id="gqH-jc-P5e" customClass="BrownCat">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brownCat" translatesAutoresizingMaskIntoConstraints="NO" id="gqH-jc-P5e">
                                 <rect key="frame" x="41" y="274" width="152" height="129.33333333333337"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onePatchCatRight" translatesAutoresizingMaskIntoConstraints="NO" id="nNX-Wc-0Rt">
                                 <rect key="frame" x="39" y="402" width="143.33333333333334" height="123.33333333333337"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twoPatchCat" translatesAutoresizingMaskIntoConstraints="NO" id="IaU-vZ-n9N" customClass="WhiteCat">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twoPatchCat" translatesAutoresizingMaskIntoConstraints="NO" id="IaU-vZ-n9N">
                                 <rect key="frame" x="193" y="275.66666666666669" width="152" height="136"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayCat" translatesAutoresizingMaskIntoConstraints="NO" id="1RN-n4-Ibp">
@@ -179,7 +179,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="See it Again"/>
                                 <connections>
-                                    <action selector="didPushReplayButton:" destination="R1U-Qc-PHq" eventType="touchUpInside" id="Fw3-o0-tUb"/>
+                                    <action selector="showSequenceAgain:" destination="R1U-Qc-PHq" eventType="touchUpInside" id="t5S-Io-Pf9"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GK4-Ss-rnH">
@@ -302,17 +302,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHc-Og-p0s">
-                                <rect key="frame" x="130.33333333333331" y="713" width="132.33333333333331" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHc-Og-p0s" userLabel="Play Button">
+                                <rect key="frame" x="154" y="713" width="85.333333333333314" height="35"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="pawprint.fill" catalog="system" title="Play Again">
+                                <buttonConfiguration key="configuration" style="filled" image="pawprint.fill" catalog="system" title="Play">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="heavy"/>
                                     <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="didPushPlayAgain1:" destination="UST-Z5-lvn" eventType="touchUpInside" id="lSy-EW-pBR"/>
-                                    <action selector="didPushPlayAgain:" destination="R1U-Qc-PHq" eventType="touchUpInside" id="b17-bg-Afs"/>
+                                    <action selector="didPressPlay:" destination="R1U-Qc-PHq" eventType="touchUpInside" id="EUY-x5-tvK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -374,11 +373,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="icw-nt-g7P"/>
                     <connections>
+                        <outlet property="cat1" destination="gqH-jc-P5e" id="3sQ-xy-y3U"/>
+                        <outlet property="cat2" destination="IaU-vZ-n9N" id="aWU-EF-OgG"/>
+                        <outlet property="cat3" destination="nNX-Wc-0Rt" id="K3g-5a-2ow"/>
+                        <outlet property="cat4" destination="1RN-n4-Ibp" id="i9w-Ev-EFp"/>
                         <outlet property="currentLevelLabel" destination="tPu-lT-aOR" id="B1o-BK-IKv"/>
-                        <outlet property="playAgainButton" destination="VHc-Og-p0s" id="5Xa-t9-k7M"/>
-                        <outlet property="replayButton" destination="flT-Uf-HqB" id="U6X-Wd-5qB"/>
+                        <outlet property="playButton" destination="VHc-Og-p0s" id="Auv-fD-MJh"/>
                         <outlet property="replayIndex" destination="MgZ-H9-2Zb" id="TGO-h9-WkM"/>
                         <outlet property="scoreLabel" destination="xWG-b6-yh1" id="7OB-xE-2MY"/>
+                        <outlet property="seeSequenceAgainButton" destination="flT-Uf-HqB" id="pD8-W3-OTW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5n-hs-cI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -478,7 +481,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNp-gD-ARQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4875.5725190839694" y="751.4084507042254"/>
+            <point key="canvasLocation" x="4598" y="858"/>
         </scene>
         <!--Game Over ControllerW-->
         <scene sceneID="BBX-zL-nAm">
@@ -761,8 +764,6 @@
                     <connections>
                         <segue destination="N6j-qY-upL" kind="relationship" relationship="viewControllers" id="Ism-18-XKB"/>
                         <segue destination="pIr-jy-f3H" kind="relationship" relationship="viewControllers" id="L3M-Ny-Ugf"/>
-                        <segue destination="OE7-sw-EEY" kind="relationship" relationship="viewControllers" id="t7E-ky-vLM"/>
-                        <segue destination="dHX-vJ-6yP" kind="relationship" relationship="viewControllers" id="zn7-Iq-a9f"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XO-Fv-iJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -824,7 +825,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cwv-5d-MsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3948.8549618320608" y="751.4084507042254"/>
+            <point key="canvasLocation" x="3576" y="858"/>
         </scene>
     </scenes>
     <resources>

@@ -8,20 +8,26 @@
 import UIKit
 
 class GameViewController: UIViewController {
-
+    
+    @IBOutlet weak var cat1: UIImageView!
+    @IBOutlet weak var cat2: UIImageView!
+    @IBOutlet weak var cat3: UIImageView!
+    @IBOutlet weak var cat4: UIImageView!
+    
+    @IBOutlet weak var seeSequenceAgainButton: UIButton!
     @IBOutlet weak var currentLevelLabel: UILabel!
-    @IBOutlet weak var replayButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var replayIndex: UILabel!
-    
-    @IBOutlet weak var playAgainButton: UIButton!
     
     var game = Game()
     var totalReplays = 3
     var totalLevels = 5
-    var currentScore = 0
-//    var currentNumberOfReplays = 0
-    var cats: [UIImageView] = []
+    var selectedCatIndex: Int = 0
+    var catImageViews: [UIImageView] = []
+    var userSequence: [Int] = []
+    var catSequence: [Int] = []
+    
     
     
     override func viewDidLoad() {
@@ -29,20 +35,51 @@ class GameViewController: UIViewController {
                 // Do any additional setup after loading the view.
         view.backgroundColor = .white // Or whatever your game background is
         self.navigationItem.hidesBackButton = true
-        var currentLevel = game.level
-        
-        replayIndex.text = "\(game.replayNumber) of \(totalReplays) used."
-        currentLevelLabel.text = "Level:  \(currentLevel) of \(totalLevels)"
-        scoreLabel.text = "Score: \(currentScore)"
-//        replayButton.isEnabled = true
-//        replayButton.alpha = 1.0
-//        game.replayNumber = 0
+        catImageViews =  [cat1, cat2, cat3, cat4]
+        game.resetGame()
+        configure(with: game)
     }
     
     
+    private func configure(with game: Game) {
+        replayIndex.text = "\(game.replayNumber) of \(totalReplays) used."
+        currentLevelLabel.text = "Level:  \(game.level) of \(totalLevels)"
+        scoreLabel.text = "Score: \(game.score)"
+    }
+    
+    func playSequence() {
+        for _ in 1...game.level {
+            animateRandomCat()
+        }
+    }
+    @IBAction func didPressPlay(_ sender: UIButton) {
+//        playSequence()
+        print("Pressed play again!")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let tabBC = storyboard.instantiateViewController(withIdentifier: "tabBarController")
+        tabBC.modalPresentationStyle = .fullScreen
+        present(tabBC, animated: true, completion: nil)
+    }
+    
+    
+    func animateRandomCat() {
+        let randomIndex = Int.random(in: 0..<4)
+        let selectedCat = catImageViews[randomIndex]
 
-    @IBAction func didPushReplayButton(_ sender: UIButton) {
-        print("Pressed replay!")
+        UIView.animate(withDuration: 0.2,
+           animations: {
+               selectedCat.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+           },
+           completion: { _ in
+               UIView.animate(withDuration: 0.2) {
+                   selectedCat.transform = .identity
+               }
+           })
+    }
+    
+    
+    @IBAction func showSequenceAgain(_ sender: UIButton) {
+        print("Show sequence again please!")
         game.replayNumber += 1
         if (game.replayNumber > totalReplays) {
             game.replayNumber = 3
@@ -52,7 +89,35 @@ class GameViewController: UIViewController {
         } else {
             replayIndex.text = "\(game.replayNumber) of \(totalReplays) used."
         }
+    }
+    
+    func checkUserSequence() {
+        if userSequence != self.catSequence {
+            showLoseScreen()
+        } else {
+            levelCompleted()
+        }
+    }
+    
+    func levelCompleted() {
+        game.nextLevel()
         
+        if game.isGameComplete {
+            showWinScreen()
+        } else {
+            currentLevelLabel.text = "Level:  \(game.level) of \(totalLevels)"
+            scoreLabel.text = "Score: \(game.score)"
+        }
+    }
+    
+    func showWinScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let winVC = storyboard.instantiateViewController(withIdentifier: "GameOverControllerW") as? GameOverControllerW {navigationController?.pushViewController(winVC, animated: true)}
+    }
+    
+    func showLoseScreen () {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let loseVC = storyboard.instantiateViewController(withIdentifier: "GameOverControllerL") as? GameOverControllerL {navigationController?.pushViewController(loseVC, animated: true)}
     }
     
     func showLastReplayAlert() {
@@ -65,12 +130,6 @@ class GameViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-    @IBAction func didPushPlayAgain(_ sender: UIButton) {
-        print("Pressed play again!")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let tabBC = storyboard.instantiateViewController(withIdentifier: "tabBarController")
-        tabBC.modalPresentationStyle = .fullScreen
-        present(tabBC, animated: true, completion: nil)
-    }
+
     
 }
