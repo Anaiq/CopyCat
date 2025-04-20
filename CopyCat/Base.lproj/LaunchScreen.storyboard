@@ -20,9 +20,10 @@
                                 <rect key="frame" x="138" y="706" width="124" height="48"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="pawprint.fill" catalog="system" imagePlacement="leading" title="Play" imagePadding="13">
+                                <buttonConfiguration key="configuration" style="filled" image="pawprint.fill" catalog="system" imagePlacement="leading" title="Play" imagePadding="13">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="heavy"/>
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                 </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IDH-Uu-OUo">
@@ -65,9 +66,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="txs-Pm-Hkh">
-                                <rect key="frame" x="282" y="642.66666666666663" width="95" height="65"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="txs-Pm-Hkh">
+                                <rect key="frame" x="282" y="642.33333333333326" width="95" height="65"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66.329999999999998" id="8Bz-ew-NEb"/>
+                                    <constraint firstAttribute="width" constant="95" id="so4-I0-WPH"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MSI-Yj-hcl">
                                 <rect key="frame" x="265" y="73.666666666666657" width="95" height="65"/>
@@ -88,18 +93,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RQ0-qI-QKL">
-                                <rect key="frame" x="305.33333333333331" y="777.66666666666663" width="19.666666666666686" height="27"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RQ0-qI-QKL">
+                                <rect key="frame" x="305.33333333333331" y="777.33333333333326" width="19.666666666666686" height="19"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="txs-Pm-Hkh" firstAttribute="top" secondItem="Lti-wa-5mt" secondAttribute="bottom" constant="113.33" id="ROt-TW-2aQ"/>
                             <constraint firstItem="rf6-qE-OBP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="127" id="YA7-Tb-ZWo"/>
                             <constraint firstItem="Lq0-FZ-zAs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YJ2-Cy-jTe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RQ0-qI-QKL" secondAttribute="trailing" constant="68" id="bI0-RW-lxO"/>
                             <constraint firstItem="RQ0-qI-QKL" firstAttribute="top" secondItem="txs-Pm-Hkh" secondAttribute="bottom" constant="68.670000000000002" id="lP5-JM-oF9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="txs-Pm-Hkh" secondAttribute="trailing" constant="16" id="lxp-Js-VUd"/>
                             <constraint firstItem="Lq0-FZ-zAs" firstAttribute="top" secondItem="Lti-wa-5mt" secondAttribute="bottom" constant="177.33000000000001" id="poz-RF-jbL"/>
                             <constraint firstItem="Lti-wa-5mt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="sh1-AW-rtQ"/>
                             <constraint firstItem="rf6-qE-OBP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yO3-Bp-YEa"/>

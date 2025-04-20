@@ -10,7 +10,9 @@ import UIKit
 
 struct Game {
     private let timer = [UIImageView].self
-    private let index: Int
+    var level: Int = 1
+    let maxLevel: Int = 5
+    var replayNumber: Int = 0
     
     
 }

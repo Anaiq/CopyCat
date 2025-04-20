@@ -9,35 +9,48 @@ import UIKit
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var currentLevelLabel: UILabel!
     @IBOutlet weak var replayButton: UIButton!
-    
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var replayIndex: UILabel!
     
-    var currentNumberOfReplays = 0
+    @IBOutlet weak var playAgainButton: UIButton!
+    
+    var game = Game()
     var totalReplays = 3
-    var currentLevelIndex = 0
     var totalLevels = 5
+    var currentScore = 0
+//    var currentNumberOfReplays = 0
     var cats: [UIImageView] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+                // Do any additional setup after loading the view.
         view.backgroundColor = .white // Or whatever your game background is
         self.navigationItem.hidesBackButton = true
-        replayIndex.text = "\(currentNumberOfReplays) of \(totalReplays) used."
+        var currentLevel = game.level
+        
+        replayIndex.text = "\(game.replayNumber) of \(totalReplays) used."
+        currentLevelLabel.text = "Level:  \(currentLevel) of \(totalLevels)"
+        scoreLabel.text = "Score: \(currentScore)"
+//        replayButton.isEnabled = true
+//        replayButton.alpha = 1.0
+//        game.replayNumber = 0
     }
+    
     
 
     @IBAction func didPushReplayButton(_ sender: UIButton) {
         print("Pressed replay!")
-        currentNumberOfReplays += 1
-        if (currentNumberOfReplays > totalReplays) {
-            replayIndex.text = "\(currentNumberOfReplays - 1) of \(totalReplays) used."
+        game.replayNumber += 1
+        if (game.replayNumber > totalReplays) {
+            game.replayNumber = 3
+            replayIndex.text = "\(game.replayNumber) of \(totalReplays) replays used."
+            sender.isEnabled = false
             showLastReplayAlert()
         } else {
-            replayIndex.text = "\(currentNumberOfReplays) of \(totalReplays) used."
+            replayIndex.text = "\(game.replayNumber) of \(totalReplays) used."
         }
         
     }
@@ -52,5 +65,12 @@ class GameViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    @IBAction func didPushPlayAgain(_ sender: UIButton) {
+        print("Pressed play again!")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let tabBC = storyboard.instantiateViewController(withIdentifier: "tabBarController")
+        tabBC.modalPresentationStyle = .fullScreen
+        present(tabBC, animated: true, completion: nil)
+    }
     
 }
