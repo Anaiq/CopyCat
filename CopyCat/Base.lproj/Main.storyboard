@@ -129,7 +129,7 @@
         <!--GameViewController-->
         <scene sceneID="uBY-CW-zaA">
             <objects>
-                <viewController storyboardIdentifier="GameViewController" id="R1U-Qc-PHq" userLabel="GameViewController" customClass="GameViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="R1U-Qc-PHq" userLabel="GameViewController" customClass="GameViewController" customModule="CopyCat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XxZ-j7-NZt">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +155,7 @@
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FeF-2O-TGT">
                                 <rect key="frame" x="79" y="243.66666666666663" width="33" height="33"/>
-                                <color key="tintColor" red="0.87282675143444177" green="0.73005858405357449" blue="0.25552640493622941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.87282675143444177" green="0.57378210740810109" blue="0.35965010791279201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="Blp-OV-79e"/>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="ZgA-Ym-a23"/>
@@ -178,10 +178,13 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="See it Again"/>
+                                <connections>
+                                    <action selector="didPushReplayButton:" destination="R1U-Qc-PHq" eventType="touchUpInside" id="Fw3-o0-tUb"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GK4-Ss-rnH">
                                 <rect key="frame" x="129" y="243.66666666666663" width="33" height="33"/>
-                                <color key="tintColor" red="0.87282675143444177" green="0.73005858405357449" blue="0.25552640493622941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.87282675143444177" green="0.57378210740810109" blue="0.35965010791279201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="Efh-Er-iUP"/>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="bdu-at-9Ek"/>
@@ -189,7 +192,7 @@
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="50F-Jd-vaQ">
                                 <rect key="frame" x="178" y="243.66666666666663" width="33" height="33"/>
-                                <color key="tintColor" red="0.87282675143444177" green="0.73005858405357449" blue="0.25552640493622941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.87282675143444177" green="0.57378210740810109" blue="0.35965010791279201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="gpV-MX-Xz1"/>
                                     <constraint firstAttribute="width" constant="33" id="rtS-mr-U68"/>
@@ -197,7 +200,7 @@
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qmu-fK-GLV">
                                 <rect key="frame" x="225" y="243.66666666666663" width="33" height="33"/>
-                                <color key="tintColor" red="0.87282675143444177" green="0.73005858405357449" blue="0.25552640493622941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.87282675143444177" green="0.57378210740810109" blue="0.35965010791279201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="Aux-XO-PDj"/>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="u1u-dg-Tdv"/>
@@ -205,7 +208,7 @@
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mzs-HE-xTC">
                                 <rect key="frame" x="270" y="243.66666666666663" width="33" height="33"/>
-                                <color key="tintColor" red="0.87282675143444177" green="0.73005858405357449" blue="0.25552640493622941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.87282675143444177" green="0.57378210740810109" blue="0.35965010791279201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="7bV-BQ-SKU"/>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="CMH-lG-ccD"/>
@@ -213,7 +216,7 @@
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Uky-an-YNy">
                                 <rect key="frame" x="107" y="282.66666666666669" width="33" height="33.000000000000057"/>
-                                <color key="tintColor" red="0.87282675143444177" green="0.73005858405357449" blue="0.25552640493622941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.87282675143444177" green="0.57378210740810109" blue="0.35965010791279201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="IpO-ho-JWk"/>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="W43-o9-2vl"/>
@@ -221,7 +224,7 @@
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eWC-uC-HcO">
                                 <rect key="frame" x="156" y="282.66666666666669" width="33" height="33.000000000000057"/>
-                                <color key="tintColor" red="0.87282675143444177" green="0.73005858405357449" blue="0.25552640493622941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.87282675143444177" green="0.57378210740810109" blue="0.35965010791279201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="uaE-W1-KVp"/>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="yW1-eD-GwD"/>
@@ -229,7 +232,7 @@
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3RO-dZ-auf">
                                 <rect key="frame" x="203" y="282.66666666666669" width="33" height="33.000000000000057"/>
-                                <color key="tintColor" red="0.87282675143444177" green="0.73005858405357449" blue="0.25552640493622941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.87282675143444177" green="0.57378210740810109" blue="0.35965010791279201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="JZF-ie-KZT"/>
                                     <constraint firstAttribute="width" constant="33" id="kOc-CD-7bI"/>
@@ -237,7 +240,7 @@
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BeL-xa-sc8">
                                 <rect key="frame" x="248" y="282.66666666666669" width="33" height="33.000000000000057"/>
-                                <color key="tintColor" red="0.87282675143444177" green="0.73005858405357449" blue="0.25552640493622941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.87282675143444177" green="0.57378210740810109" blue="0.35965010791279201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="b76-uL-Vmk"/>
                                     <constraint firstAttribute="width" constant="33" id="x4g-Xh-U7E"/>
@@ -347,6 +350,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="icw-nt-g7P"/>
+                    <connections>
+                        <outlet property="replayButton" destination="flT-Uf-HqB" id="U6X-Wd-5qB"/>
+                        <outlet property="replayIndex" destination="MgZ-H9-2Zb" id="TGO-h9-WkM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5n-hs-cI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

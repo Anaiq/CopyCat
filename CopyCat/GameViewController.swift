@@ -9,8 +9,10 @@ import UIKit
 
 class GameViewController: UIViewController {
 
-    @IBOutlet weak var replaySequenceButton: UIButton!
+    @IBOutlet weak var replayButton: UIButton!
+    
     @IBOutlet weak var replayIndex: UILabel!
+    
     var replays = 0
     
     

@@ -10,7 +10,8 @@ import UIKit
 
 struct RulesAndSettings {
     let gameRules: String = """
-    HOW TO PLAY – Cat Memory Game.  Think Simon, but with cats!!
+    HOW TO PLAY – Cat Memory Game.  
+    Think Simon, but with cats!!
 
     OBJECTIVE:
     Repeat the correct sequence of cats to advance through stages. The game ends when you get a sequence wrong.

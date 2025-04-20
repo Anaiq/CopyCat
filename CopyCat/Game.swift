@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 
 struct Game {
-    let timer = [UIImageView].self
+    private let timer = [UIImageView].self
+    private let index: Int
+    
     
 }
 
