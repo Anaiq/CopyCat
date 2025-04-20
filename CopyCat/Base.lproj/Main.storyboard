@@ -283,18 +283,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5n-hs-cI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2916.7938931297708" y="-42.253521126760567"/>
+            <point key="canvasLocation" x="2555" y="829"/>
         </scene>
         <!--Game Over ControllerL-->
         <scene sceneID="hHZ-qX-Zau">
             <objects>
-                <viewController id="UST-Z5-lvn" customClass="GameOverControllerL" sceneMemberID="viewController">
+                <viewController id="UST-Z5-lvn" userLabel="Game Over ControllerL" customClass="GameOverControllerL" customModule="CopyCat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cEb-i4-7ym">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uh-Oh!  You made a Meow-Stake!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbB-fe-xj5">
-                                <rect key="frame" x="16" y="101" width="361" height="100"/>
+                                <rect key="frame" x="16" y="145" width="361" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Ch8-aA-2SG"/>
                                     <constraint firstAttribute="width" constant="361" id="ue1-Wk-k6O"/>
@@ -303,12 +303,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-RZ-Zwe">
-                                <rect key="frame" x="131.66666666666666" y="686" width="129.99999999999997" height="35"/>
-                                <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="pawprint.fill" catalog="system" title="Play again"/>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loser" translatesAutoresizingMaskIntoConstraints="NO" id="nQb-ox-z67">
                                 <rect key="frame" x="13.666666666666657" y="267.66666666666669" width="366" height="317.00000000000006"/>
                                 <constraints>
@@ -317,40 +311,52 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Lost." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WH3-MC-yqf">
-                                <rect key="frame" x="133.66666666666666" y="579" width="125.66666666666666" height="38.333333333333371"/>
+                                <rect key="frame" x="133.66666666666666" y="623" width="125.66666666666666" height="38.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrc-My-9J6">
+                                <rect key="frame" x="131" y="700" width="131" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="pawprint.fill" catalog="system" title="Play Again"/>
+                                <connections>
+                                    <action selector="didPushPlayAgain1:" destination="UST-Z5-lvn" eventType="touchUpInside" id="mDs-dd-iFl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ij3-WW-PUC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Dhk-RZ-Zwe" firstAttribute="centerX" secondItem="cEb-i4-7ym" secondAttribute="centerX" id="4nR-Cn-emB"/>
                             <constraint firstItem="WH3-MC-yqf" firstAttribute="top" secondItem="jbB-fe-xj5" secondAttribute="bottom" constant="378" id="LS7-x7-wWG"/>
                             <constraint firstItem="nQb-ox-z67" firstAttribute="centerY" secondItem="cEb-i4-7ym" secondAttribute="centerY" id="bie-Uf-RTY"/>
                             <constraint firstItem="jbB-fe-xj5" firstAttribute="centerX" secondItem="cEb-i4-7ym" secondAttribute="centerX" id="dvV-MM-YCy"/>
                             <constraint firstItem="nQb-ox-z67" firstAttribute="centerX" secondItem="cEb-i4-7ym" secondAttribute="centerX" id="lu4-kU-G23"/>
                             <constraint firstItem="jbB-fe-xj5" firstAttribute="top" secondItem="ij3-WW-PUC" secondAttribute="top" constant="42" id="nAu-EE-DGq"/>
-                            <constraint firstItem="Dhk-RZ-Zwe" firstAttribute="top" secondItem="WH3-MC-yqf" secondAttribute="bottom" constant="68.670000000000002" id="ua6-I6-Fea"/>
                             <constraint firstItem="WH3-MC-yqf" firstAttribute="centerX" secondItem="cEb-i4-7ym" secondAttribute="centerX" id="wTb-Os-kvF"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="koG-dj-VXU"/>
+                    <connections>
+                        <outlet property="playAgain" destination="Vrc-My-9J6" id="oUB-7c-JUL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNp-gD-ARQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3977.8625954198474" y="-31.690140845070424"/>
+            <point key="canvasLocation" x="4875.5725190839694" y="751.4084507042254"/>
         </scene>
         <!--Game Over ControllerW-->
         <scene sceneID="BBX-zL-nAm">
             <objects>
-                <viewController id="1VW-Eq-9r5" customClass="GameOverControllerW" sceneMemberID="viewController">
+                <viewController id="1VW-Eq-9r5" userLabel="Game Over ControllerW" customClass="GameOverControllerW" customModule="CopyCat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7u8-kT-shl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puuuuurrrrrfect!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQd-YT-GJh">
-                                <rect key="frame" x="16" y="101" width="361" height="100"/>
+                                <rect key="frame" x="16" y="145" width="361" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="YaI-It-JCT"/>
                                     <constraint firstAttribute="width" constant="361" id="p7H-jJ-M9W"/>
@@ -367,16 +373,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Win!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyQ-J3-tq1">
-                                <rect key="frame" x="135.66666666666666" y="579" width="121.99999999999997" height="39"/>
+                                <rect key="frame" x="135.66666666666666" y="623" width="121.99999999999997" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z0-ei-WAU">
-                                <rect key="frame" x="131.66666666666666" y="687" width="129.99999999999997" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z0-ei-WAU">
+                                <rect key="frame" x="132" y="731" width="131" height="35"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="pawprint.fill" catalog="system" title="Play again"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="pawprint.fill" catalog="system" title="Play Again"/>
+                                <connections>
+                                    <action selector="didPushPlayAgain:" destination="1VW-Eq-9r5" eventType="touchUpInside" id="EjP-Gy-PpY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WvM-1h-89N"/>
@@ -392,10 +401,14 @@
                             <constraint firstItem="qQd-YT-GJh" firstAttribute="top" secondItem="WvM-1h-89N" secondAttribute="top" constant="42" id="pjN-HY-Xeh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hyb-qK-0tm"/>
+                    <connections>
+                        <outlet property="wPlayAgain" destination="1z0-ei-WAU" id="S9K-Wk-Ouf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWE-Ls-An7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4726" y="-32"/>
+            <point key="canvasLocation" x="5542.7480916030536" y="101.40845070422536"/>
         </scene>
         <!--RulesViewController-->
         <scene sceneID="HRY-aI-WXS">
@@ -496,6 +509,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3a-My-wqW">
+                                <rect key="frame" x="241" y="520" width="107" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="testBUtton"/>
+                                <connections>
+                                    <action selector="pushedTestButton:" destination="zw6-Jf-lAr" eventType="touchUpInside" id="QSk-vO-OWD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bp7-S6-rpJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -523,11 +545,12 @@
                         <outlet property="rulesTextView" destination="1aZ-1Y-uhD" id="4ml-dq-RhH"/>
                         <outlet property="slowButton" destination="LjJ-3a-rlb" id="vDI-tu-Pul"/>
                         <outlet property="speedSwitch" destination="qEs-ed-HlN" id="yC9-a3-2uD"/>
+                        <outlet property="testButton" destination="r3a-My-wqW" id="S57-dy-4yY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBT-IG-oSv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2916.7938931297708" y="845.77464788732402"/>
+            <point key="canvasLocation" x="3092" y="-42"/>
         </scene>
         <!--Rulles / Settings-->
         <scene sceneID="Wgz-DY-j76">
@@ -561,6 +584,8 @@
                     <connections>
                         <segue destination="N6j-qY-upL" kind="relationship" relationship="viewControllers" id="Ism-18-XKB"/>
                         <segue destination="pIr-jy-f3H" kind="relationship" relationship="viewControllers" id="L3M-Ny-Ugf"/>
+                        <segue destination="OE7-sw-EEY" kind="relationship" relationship="viewControllers" id="t7E-ky-vLM"/>
+                        <segue destination="dHX-vJ-6yP" kind="relationship" relationship="viewControllers" id="zn7-Iq-a9f"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XO-Fv-iJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -586,11 +611,51 @@
             </objects>
             <point key="canvasLocation" x="1460" y="829"/>
         </scene>
+        <!--Win-->
+        <scene sceneID="Qql-Y3-xdO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OE7-sw-EEY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Win" image="hand.thumbsup.fill" catalog="system" id="s4d-Hx-7j8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ipk-53-9bt">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1VW-Eq-9r5" kind="relationship" relationship="rootViewController" id="Vib-xJ-vIZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXc-Be-AZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4599" y="89"/>
+        </scene>
+        <!--Lost-->
+        <scene sceneID="i9z-ac-hMV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dHX-vJ-6yP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Lost" image="hand.thumbsdown.fill" catalog="system" id="4sM-md-mci"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CVm-DY-LMj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UST-Z5-lvn" kind="relationship" relationship="rootViewController" id="zpp-10-ypA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cwv-5d-MsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3948.8549618320608" y="751.4084507042254"/>
+        </scene>
     </scenes>
     <resources>
         <image name="brownCat" width="152" height="129.33332824707031"/>
         <image name="checklist.checked.rtl" catalog="system" width="128" height="107"/>
         <image name="grayCat" width="156" height="135.33332824707031"/>
+        <image name="hand.thumbsdown.fill" catalog="system" width="128" height="121"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
         <image name="loser" width="356" height="352.66665649414062"/>
         <image name="onePatchCatLeft" width="160.66667175292969" height="133.33332824707031"/>
         <image name="onePatchCatRight" width="143.33332824707031" height="123.33333587646484"/>
