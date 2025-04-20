@@ -11,7 +11,7 @@ Schema <br>
 ## Overview
 #### Description
 Think Simon, but with cats! It features a random sequence of cats that a player must memorize and duplicate.  If the player
-produces the right sequence,they advance to the next stage.  They game ends when the player inputs an incorrect sequence.
+produces the right sequence,they advance to the next stage.  The game ends when the player inputs an incorrect sequence.
 
 #### App Evaluation
 #### 1. Mobile: How uniquely mobile is the product experience?
