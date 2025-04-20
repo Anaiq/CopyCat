@@ -6,4 +6,10 @@
 //
 
 import Foundation
+import UIKit
+
+struct Game {
+    let timer = [UIImageView].self
+    
+}
 
