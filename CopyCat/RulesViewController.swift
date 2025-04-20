@@ -18,6 +18,9 @@ class RulesViewController: UIViewController {
     @IBOutlet weak var fastButton2: UIImageView!
     @IBOutlet weak var fastButton1: UIImageView!
     
+    private var rulesAnSettings = RulesAndSettings(difficulty: .easy, speed: .normal)
+    
+    
     
 //    enum Speed {
 //        case fast
@@ -40,7 +43,8 @@ class RulesViewController: UIViewController {
         speedSwitch.isOn = false
         setSwitch()
         // Do any additional setup after loading the view.
-        rulesTextView.text = "abc"
+
+        rulesTextView.text = rulesAnSettings.gameRules
     }
     
     

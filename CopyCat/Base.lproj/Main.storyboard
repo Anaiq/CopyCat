@@ -425,49 +425,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEL-iK-lpT">
-                                <rect key="frame" x="51" y="193" width="57" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEL-iK-lpT">
+                                <rect key="frame" x="29.999999999999996" y="193" width="62.666666666666657" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ga-o6-oEC">
-                                <rect key="frame" x="51" y="560" width="86" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ga-o6-oEC">
+                                <rect key="frame" x="29.999999999999993" y="560" width="91.333333333333314" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aZ-1Y-uhD">
-                                <rect key="frame" x="51" y="260" width="317" height="280"/>
+                                <rect key="frame" x="30" y="260" width="347" height="280"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="317" id="PD9-7F-ceD"/>
+                                    <constraint firstAttribute="width" constant="347" id="YhJ-wd-H2m"/>
                                     <constraint firstAttribute="height" constant="280" id="jWd-Px-fEl"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sequence Difficulty: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlO-8Y-3Uv">
-                                <rect key="frame" x="51" y="615" width="151" height="20"/>
+                                <rect key="frame" x="30" y="615" width="151" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1T-Mb-pPb">
-                                <rect key="frame" x="51" y="659" width="56" height="20"/>
+                                <rect key="frame" x="51" y="669" width="56" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LjJ-3a-rlb">
-                                <rect key="frame" x="115" y="654" width="56" height="31"/>
+                                <rect key="frame" x="115" y="663.66666666666663" width="56" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rap-FT-rgj">
-                                <rect key="frame" x="241" y="654" width="44" height="31"/>
+                                <rect key="frame" x="241" y="663.66666666666663" width="44" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
@@ -484,7 +484,7 @@
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" title="speedToggle" translatesAutoresizingMaskIntoConstraints="NO" id="qEs-ed-HlN">
-                                <rect key="frame" x="181" y="654" width="49" height="31"/>
+                                <rect key="frame" x="181" y="663.66666666666663" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="systemFillColor"/>
@@ -505,7 +505,27 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="AFZ-r9-iCh">
-                                <rect key="frame" x="272" y="653.66666666666652" width="44" height="31"/>
+                                <rect key="frame" x="272" y="663.66666666666663" width="44" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FOo-eT-PYC">
+                                <rect key="frame" x="247" y="130.66666666666663" width="95" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YrO-cs-Wc0">
+                                <rect key="frame" x="177" y="188" width="54" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Pdm-Ym-ZSf">
+                                <rect key="frame" x="-44" y="310" width="95" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JkB-Sv-WdM">
+                                <rect key="frame" x="339" y="470.66666666666674" width="54" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
@@ -516,15 +536,15 @@
                             <constraint firstItem="wEL-iK-lpT" firstAttribute="top" secondItem="LYB-2X-gQJ" secondAttribute="bottom" constant="8" id="2kS-9M-70u"/>
                             <constraint firstItem="1aZ-1Y-uhD" firstAttribute="top" secondItem="wEL-iK-lpT" secondAttribute="bottom" constant="38" id="3g3-ex-mLr"/>
                             <constraint firstItem="LYB-2X-gQJ" firstAttribute="top" secondItem="Bp7-S6-rpJ" secondAttribute="top" constant="39" id="5fI-4X-kCG"/>
-                            <constraint firstItem="1ga-o6-oEC" firstAttribute="leading" secondItem="Bp7-S6-rpJ" secondAttribute="leading" constant="51" id="E7Z-Xe-bBm"/>
-                            <constraint firstItem="1aZ-1Y-uhD" firstAttribute="leading" secondItem="Bp7-S6-rpJ" secondAttribute="leading" constant="51" id="WwK-fb-a49"/>
+                            <constraint firstItem="1ga-o6-oEC" firstAttribute="leading" secondItem="Bp7-S6-rpJ" secondAttribute="leading" constant="30" id="E7Z-Xe-bBm"/>
+                            <constraint firstItem="1aZ-1Y-uhD" firstAttribute="leading" secondItem="Bp7-S6-rpJ" secondAttribute="leading" constant="30" id="WwK-fb-a49"/>
                             <constraint firstItem="GlO-8Y-3Uv" firstAttribute="top" secondItem="1ga-o6-oEC" secondAttribute="bottom" constant="26" id="b0i-SV-8pn"/>
-                            <constraint firstItem="GlO-8Y-3Uv" firstAttribute="leading" secondItem="Bp7-S6-rpJ" secondAttribute="leading" constant="51" id="bHP-y4-MWk"/>
+                            <constraint firstItem="GlO-8Y-3Uv" firstAttribute="leading" secondItem="Bp7-S6-rpJ" secondAttribute="leading" constant="30" id="bHP-y4-MWk"/>
                             <constraint firstItem="Q1T-Mb-pPb" firstAttribute="leading" secondItem="Bp7-S6-rpJ" secondAttribute="leading" constant="51" id="mS1-fL-9uI"/>
                             <constraint firstItem="LYB-2X-gQJ" firstAttribute="leading" secondItem="Bp7-S6-rpJ" secondAttribute="leading" constant="17" id="pi4-kW-SXv"/>
-                            <constraint firstItem="wEL-iK-lpT" firstAttribute="leading" secondItem="Bp7-S6-rpJ" secondAttribute="leading" constant="51" id="qRr-RV-nRS"/>
+                            <constraint firstItem="wEL-iK-lpT" firstAttribute="leading" secondItem="Bp7-S6-rpJ" secondAttribute="leading" constant="30" id="qRr-RV-nRS"/>
                             <constraint firstItem="1ga-o6-oEC" firstAttribute="top" secondItem="1aZ-1Y-uhD" secondAttribute="bottom" constant="20" id="qYC-wi-ymB"/>
-                            <constraint firstItem="Q1T-Mb-pPb" firstAttribute="top" secondItem="GlO-8Y-3Uv" secondAttribute="bottom" constant="24" id="tRC-pJ-d6E"/>
+                            <constraint firstItem="Q1T-Mb-pPb" firstAttribute="top" secondItem="GlO-8Y-3Uv" secondAttribute="bottom" constant="34" id="tRC-pJ-d6E"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dti-xM-EPO"/>
@@ -540,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBT-IG-oSv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3092" y="-42"/>
+            <point key="canvasLocation" x="3090.8396946564885" y="-42.253521126760567"/>
         </scene>
         <!--Rulles / Settings-->
         <scene sceneID="Wgz-DY-j76">
