@@ -15,6 +15,7 @@ class GameOverControllerL: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.navigationItem.hidesBackButton = true
     }
     @IBAction func didPushPlayAgain1(_ sender: UIButton) {
         print("Pressed Play again!")

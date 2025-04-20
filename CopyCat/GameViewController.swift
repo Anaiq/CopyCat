@@ -35,7 +35,16 @@ class GameViewController: UIViewController {
                 // Do any additional setup after loading the view.
         view.backgroundColor = .white // Or whatever your game background is
         self.navigationItem.hidesBackButton = true
+        
         catImageViews =  [cat1, cat2, cat3, cat4]
+        
+        for (index, catImageView) in catImageViews.enumerated() {
+            catImageView.isUserInteractionEnabled = true
+            catImageView.tag = index
+            let tap = UITapGestureRecognizer(target: self, action: #selector(catTapped(_:)))
+            catImageView.addGestureRecognizer(tap)
+        }
+        
         game.resetGame()
         configure(with: game)
     }
@@ -47,32 +56,66 @@ class GameViewController: UIViewController {
         scoreLabel.text = "Score: \(game.score)"
     }
     
-    func playSequence() {
-        for _ in 1...game.level {
-            animateRandomCat()
+    
+    func createCatSequence() {
+        catSequence = []
+        userSequence = []
+        
+        for _ in 0..<game.level {
+            let randomIndex = Int.random(in: 0..<catImageViews.count)
+            catSequence.append(randomIndex)
+        }
+        
+        playCatSequence()
+    }
+    
+    
+    func playCatSequence() {
+        for (i, catIndex) in catSequence.enumerated() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(i) * 0.6) {
+                self.animateRandomCat(at: catIndex)
+            }
         }
     }
+    
+    
+    @objc func catTapped(_ sender: UITapGestureRecognizer) {
+        guard let tappedView = sender.view else {return}
+        
+        let tappedIndex = tappedView.tag
+        animateRandomCat(at: tappedIndex)
+        userSequence.append(tappedIndex)
+        
+        let currentAttempt = userSequence.count - 1
+        
+        if catSequence[currentAttempt] != tappedIndex {
+            showLoseScreen()
+            return
+        }
+        
+        if userSequence.count == catSequence.count {
+            levelCompleted()
+        }
+    }
+    
     @IBAction func didPressPlay(_ sender: UIButton) {
-//        playSequence()
-        print("Pressed play again!")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let tabBC = storyboard.instantiateViewController(withIdentifier: "tabBarController")
-        tabBC.modalPresentationStyle = .fullScreen
-        present(tabBC, animated: true, completion: nil)
+        sender.isHidden = true
+        createCatSequence()
     }
     
     
-    func animateRandomCat() {
-        let randomIndex = Int.random(in: 0..<4)
-        let selectedCat = catImageViews[randomIndex]
+    func animateRandomCat(at index: Int) {
+        let selectedCat = catImageViews[index]
 
         UIView.animate(withDuration: 0.2,
            animations: {
-               selectedCat.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            selectedCat.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            selectedCat.backgroundColor = .systemYellow
            },
            completion: { _ in
                UIView.animate(withDuration: 0.2) {
                    selectedCat.transform = .identity
+                   selectedCat.backgroundColor = .clear
                }
            })
     }
@@ -80,6 +123,7 @@ class GameViewController: UIViewController {
     
     @IBAction func showSequenceAgain(_ sender: UIButton) {
         print("Show sequence again please!")
+        playCatSequence()
         game.replayNumber += 1
         if (game.replayNumber > totalReplays) {
             game.replayNumber = 3
@@ -107,6 +151,9 @@ class GameViewController: UIViewController {
         } else {
             currentLevelLabel.text = "Level:  \(game.level) of \(totalLevels)"
             scoreLabel.text = "Score: \(game.score)"
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+            self.createCatSequence()
         }
     }
     

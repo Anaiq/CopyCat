@@ -391,7 +391,7 @@
         <!--Game Over ControllerL-->
         <scene sceneID="hHZ-qX-Zau">
             <objects>
-                <viewController id="UST-Z5-lvn" userLabel="Game Over ControllerL" customClass="GameOverControllerL" customModule="CopyCat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameOverControllerL" id="UST-Z5-lvn" userLabel="Game Over ControllerL" customClass="GameOverControllerL" customModule="CopyCat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cEb-i4-7ym">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -486,7 +486,7 @@
         <!--Game Over ControllerW-->
         <scene sceneID="BBX-zL-nAm">
             <objects>
-                <viewController id="1VW-Eq-9r5" userLabel="Game Over ControllerW" customClass="GameOverControllerW" customModule="CopyCat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameOverControllerW" id="1VW-Eq-9r5" userLabel="Game Over ControllerW" customClass="GameOverControllerW" customModule="CopyCat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7u8-kT-shl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
