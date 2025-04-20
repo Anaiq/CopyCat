@@ -509,15 +509,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.94269311430000002" green="0.79179189480000001" blue="0.28984277870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3a-My-wqW">
-                                <rect key="frame" x="241" y="520" width="107" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="testBUtton"/>
-                                <connections>
-                                    <action selector="pushedTestButton:" destination="zw6-Jf-lAr" eventType="touchUpInside" id="QSk-vO-OWD"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bp7-S6-rpJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -545,7 +536,6 @@
                         <outlet property="rulesTextView" destination="1aZ-1Y-uhD" id="4ml-dq-RhH"/>
                         <outlet property="slowButton" destination="LjJ-3a-rlb" id="vDI-tu-Pul"/>
                         <outlet property="speedSwitch" destination="qEs-ed-HlN" id="yC9-a3-2uD"/>
-                        <outlet property="testButton" destination="r3a-My-wqW" id="S57-dy-4yY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBT-IG-oSv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

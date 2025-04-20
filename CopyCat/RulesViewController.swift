@@ -19,18 +19,18 @@ class RulesViewController: UIViewController {
     @IBOutlet weak var fastButton1: UIImageView!
     
     
-    enum Speed {
-        case fast
-        case normal
-        
-        var speedMultiplier: Double {
-            switch self {
-            case .fast: return 1.5
-            case .normal: return 1.0
-            }
-        }
-    }
-    
+//    enum Speed {
+//        case fast
+//        case normal
+//        
+//        var speedMultiplier: Double {
+//            switch self {
+//            case .fast: return 1.5
+//            case .normal: return 1.0
+//            }
+//        }
+//    }
+//    
     override func viewDidLoad() {
         super.viewDidLoad()
         slowButton.tintColor = .systemYellow
@@ -40,7 +40,7 @@ class RulesViewController: UIViewController {
         speedSwitch.isOn = false
         setSwitch()
         // Do any additional setup after loading the view.
-        rulesTextView.text = "adfasdfasdfasdfal aldf a;lskdjfal;sk adslfkja ;sldfk a dflkaj d;flkajs;ldfk alsdkfj a;ldkfj lak flakdf al;kdf  alsdkf j;alk djf"
+        rulesTextView.text = "abc"
     }
     
     
@@ -61,10 +61,10 @@ class RulesViewController: UIViewController {
         
         if sender.isOn {
             print("fast selected.")
-            setSpeed(speed: .fast)
+            setSpeed(speed: RulesAndSettings.GameSpeed.fast)
         } else {
             print("normal selected.")
-            setSpeed(speed: .normal)
+            setSpeed(speed: RulesAndSettings.GameSpeed.normal)
         }
         slowButton.tintColor = sender.isOn ? .lightGray : .systemYellow
         fastButton1.tintColor = sender.isOn ? .systemYellow : .lightGray
@@ -78,7 +78,7 @@ class RulesViewController: UIViewController {
         speedSwitch.tintColor = .darkGray
     }
     
-    func setSpeed(speed: Speed) {
+    func setSpeed(speed: RulesAndSettings.GameSpeed) {
 //        game.speedMultiplier = speedMultiplier
         print("speed selected")
     }
