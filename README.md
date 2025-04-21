@@ -113,3 +113,11 @@ Hand sketched wireframes:
 | gameRules | String | Instructions on how to play the game. |
 | difficuly | GameSequenceDifficulty (enum) | Increased difficulty with longer sequences. |
 | speed | GameSpeed (enum) | Increases speed of animation for more challenge play. | 
+
+
+### Future Enhancements
+-[] Paw timer counts down between each move, maybe start a 5 paws (seconds) for each move and increased up to max 9 paws (seconds) for more difficult levels.
+-[] Add optional different meow sounds for each cat.
+-[] Add more levels.
+-[] Bug fix: Speed setting needs to reset to normal or remain at previous setting when restart a game.
+-[] Bug fix: Disable recognizing user tap before push play button.
