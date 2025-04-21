@@ -13,6 +13,11 @@ Schema <br>
 Think Simon, but with cats! It features a random sequence of cats that a player must memorize and duplicate.  If the player
 produces the right sequence,they advance to the next stage.  The game ends when the player inputs an incorrect sequence.
 
+#### Video Walkthrough
+
+https://github.com/user-attachments/assets/56b443df-1236-4c9e-b66b-6fc4f88158f2
+
+
 #### App Evaluation
 #### 1. Mobile: How uniquely mobile is the product experience?
 It's designed for quick, focused gameplay, puurfect while you are waiting. Feels more natural on touchscreens. Responsive
@@ -62,15 +67,15 @@ Tab Navigation (Tab to Screen)
 Flow Navigation (Screen to Screen)
 <img width="1341" alt="flow" src="https://github.com/user-attachments/assets/11a1cd02-b99b-4a21-a24c-3228c53e35b1" />
 
-Login/Start => Home  
+Start => Rules/Settings  
 
-Home => Game  
+Rules/Settings  => Game  
 
-Game => Home  OR Game => Game Over - Win OR Game => Game Over - Lose  
+Game => Rules/Settings   OR Game => Game Over - Win OR Game => Game Over - Lose  
      
-Game Over - Win => Home  
+Game Over - Win => Rules/Settings   
 
-Game Over - Lose => Home
+Game Over - Lose => Rules/Settings 
 
 <hr>
 
@@ -89,9 +94,22 @@ Hand sketched wireframes:
 <hr> 
 
 ### Schema
-[This section will be completed in Unit 9]
+“The Game struct keeps track of the player's progress (level, score, replays). It also stores the animation speed, which is determined by user settings in RulesAndSettings. These settings are controlled by the player on the rules screen and affect how quickly the cats animate in the game.”
 
 ### Models
-[Add table of models]
+#### Game
+|  Property  | Type | Description  |
+| -------- | -------- | ----------- |
+| level | Int | Current game level. |
+| maxLevel | Int | Maximum number of level in the game. | 
+| score | Int | Player's score | 
+| replaynumber | Int | How many replays the user has used. | 
+| animationSpeed | Double | Speed of animations based on selections | 
+| isGameComplete | Bool | Checks win. |
 
-
+#### Rules
+|  Property  | Type | Description  |
+| -------- | -------- | ----------- |
+| gameRules | String | Instructions on how to play the game. |
+| difficuly | GameSequenceDifficulty (enum) | Increased difficulty with longer sequences. |
+| speed | GameSpeed (enum) | Increases speed of animation for more challenge play. | 
