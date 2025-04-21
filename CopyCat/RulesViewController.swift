@@ -21,19 +21,8 @@ class RulesViewController: UIViewController {
     private var rulesAnSettings = RulesAndSettings(difficulty: .easy, speed: .normal)
     
     
+    var rules = RulesAndSettings(difficulty: .easy, speed:.normal)
     
-//    enum Speed {
-//        case fast
-//        case normal
-//        
-//        var speedMultiplier: Double {
-//            switch self {
-//            case .fast: return 1.5
-//            case .normal: return 1.0
-//            }
-//        }
-//    }
-//    
     override func viewDidLoad() {
         super.viewDidLoad()
         slowButton.tintColor = .systemYellow
@@ -65,10 +54,12 @@ class RulesViewController: UIViewController {
         
         if sender.isOn {
             print("fast selected.")
-            setSpeed(speed: RulesAndSettings.GameSpeed.fast)
+            RulesAndSettings.selectedSpeed = .fast
+            print("\(RulesAndSettings.selectedSpeed)")
         } else {
             print("normal selected.")
-            setSpeed(speed: RulesAndSettings.GameSpeed.normal)
+            RulesAndSettings.selectedSpeed = .normal
+            print("\(RulesAndSettings.selectedSpeed)")
         }
         slowButton.tintColor = sender.isOn ? .lightGray : .systemYellow
         fastButton1.tintColor = sender.isOn ? .systemYellow : .lightGray
@@ -82,9 +73,4 @@ class RulesViewController: UIViewController {
         speedSwitch.tintColor = .darkGray
     }
     
-    func setSpeed(speed: RulesAndSettings.GameSpeed) {
-//        game.speedMultiplier = speedMultiplier
-        print("speed selected")
-    }
-
 }

@@ -27,6 +27,8 @@ class GameViewController: UIViewController {
     var catImageViews: [UIImageView] = []
     var userSequence: [Int] = []
     var catSequence: [Int] = []
+    var currentSpeed: Double = 0
+    
     
     
     
@@ -35,6 +37,8 @@ class GameViewController: UIViewController {
                 // Do any additional setup after loading the view.
         view.backgroundColor = .white // Or whatever your game background is
         self.navigationItem.hidesBackButton = true
+        
+        print("game animation speed on load: \(game.animationSpeed)")
         
         catImageViews =  [cat1, cat2, cat3, cat4]
         
@@ -104,16 +108,19 @@ class GameViewController: UIViewController {
     }
     
     
+    
     func animateRandomCat(at index: Int) {
         let selectedCat = catImageViews[index]
+        
+        print("game animation speed when animating: \(game.animationSpeed)")
 
-        UIView.animate(withDuration: 0.2,
+        UIView.animate(withDuration: game.animationSpeed,
            animations: {
             selectedCat.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
             selectedCat.backgroundColor = .systemYellow
            },
            completion: { _ in
-               UIView.animate(withDuration: 0.2) {
+            UIView.animate(withDuration: self.game.animationSpeed) {
                    selectedCat.transform = .identity
                    selectedCat.backgroundColor = .clear
                }

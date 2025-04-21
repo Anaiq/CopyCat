@@ -17,6 +17,7 @@ struct Game {
     var isGameComplete: Bool {
         return level > maxLevel
     }
+    var animationSpeed: Double = 0
     
     
     mutating func nextLevel() {
@@ -32,6 +33,7 @@ struct Game {
         self.level = 1
         self.score = 0
         self.replayNumber = 0
+        self.animationSpeed = RulesAndSettings.selectedSpeed.speedMultiplier
     }
 }
 

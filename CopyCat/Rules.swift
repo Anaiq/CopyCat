@@ -65,10 +65,11 @@ struct RulesAndSettings {
         
         var speedMultiplier: Double {
             switch self {
-            case .fast: return 1.5
-            case .normal: return 1.0
+            case .fast: return 0.15
+            case .normal: return 0.3
             }
         }
     }
+    static var selectedSpeed:GameSpeed = .normal
     
 }
