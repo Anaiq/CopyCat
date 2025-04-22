@@ -120,4 +120,4 @@ Hand sketched wireframes:
 -[] Add optional different meow sounds for each cat.
 -[] Add more levels.
 -[] Bug fix: Speed setting needs to reset to normal or remain at previous setting when restart a game.
--[] Bug fix: Disable recognizing user tap before push play button.
+-[X] Bug fix: Disable recognizing user tap before push play button.
