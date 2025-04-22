@@ -42,13 +42,6 @@ class GameViewController: UIViewController {
         
         catImageViews =  [cat1, cat2, cat3, cat4]
         
-        for (index, catImageView) in catImageViews.enumerated() {
-            catImageView.isUserInteractionEnabled = true
-            catImageView.tag = index
-            let tap = UITapGestureRecognizer(target: self, action: #selector(catTapped(_:)))
-            catImageView.addGestureRecognizer(tap)
-        }
-        
         game.resetGame()
         configure(with: game)
     }
@@ -105,6 +98,12 @@ class GameViewController: UIViewController {
     @IBAction func didPressPlay(_ sender: UIButton) {
         sender.isHidden = true
         createCatSequence()
+        for (index, catImageView) in catImageViews.enumerated() {
+            catImageView.isUserInteractionEnabled = true
+            catImageView.tag = index
+            let tap = UITapGestureRecognizer(target: self, action: #selector(catTapped(_:)))
+            catImageView.addGestureRecognizer(tap)
+        }
     }
     
     
