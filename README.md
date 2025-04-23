@@ -2,9 +2,13 @@
 
 ## Table of Contents
 Overview <br>
-Product Spec <br>
+Demo <br>
+Product Spec: Required and Optional future enhancements <br>
 Wireframes <br>
 Schema <br>
+Models <br>
+Sprint Planning
+ <br>
 
 <hr>
 
@@ -13,7 +17,7 @@ Schema <br>
 Think Simon, but with cats! It features a random sequence of cats that a player must memorize and duplicate.  If the player
 produces the right sequence,they advance to the next stage.  The game ends when the player inputs an incorrect sequence.
 
-#### Video Walkthrough
+#### Video Demo
 
 https://github.com/user-attachments/assets/56b443df-1236-4c9e-b66b-6fc4f88158f2
 
@@ -38,35 +42,32 @@ V3 Adds on a timers(9 secs) for each move, possible different cat themes.
 
 ### Product Spec
 1. User Stories (Required and Optional)
-Required Must-have Stories : Minimum Viable Product
-- A user can start a new game
-- A user can choose an easy or hard mode for longest sequence
-- A user can choose a fast or slow sequence speed
+#### Required Must-have Stories : Minimum Viable Product
+-[X] A user can start a new game <br>
+-[X] A user can navigate to/from the rules <-> game screen <br>
+-[X] A user can choose a fast or slow cat display speed <br>
+-[X] A user can view their progress through the levels and see their score <br>
+-[X] A user can replay a sequence up to 3 times <br>
 
-Optional Nice-to-have Stories
-- A timer up to 9 seconds for each play. Starts with 9 cat lives and ticks down and the player must complete the correct sequence in that time.
-- Cat purr when user completes a level or stage
-- Animated cat on game lost or won screen.
+ #### Optional Nice-to-have Stories
+-[] Paw timer counts down between each move, maybe start a 5 paws (seconds) for each move and increased up to max 9 paws (seconds) for more difficult levels.  <br>
+-[] Add optional different meow sounds for each cat. <br>
+-[] Add more levels to choose an easy or hard mode for longer sequence <br>
+-[] Bug fix: Speed setting needs to reset to normal or remain at previous setting when restart a game. <br>
+-[X] Bug fix: Disable recognizing user tap before push play button. <br>
 
 
 2. Screen Archetypes
-Login/start: User can enter the game
-Home: User can read the rules, choose an easy or hard mode, choose a slow or fast  sequence. User chooses their cat.
+Start: User can enter the game
+Home/Rules/Settings: User can read the rules, choose an easy or hard mode, choose a slow or fast  sequence. User chooses their cat.
 Game: Interact with game, replay sequence up to 3 times.
 Game Over - Win : start new game.
 Game Over - Lose: start new game.
 
 3. Navigation
-Navigation Flow
-
-
-Tab Navigation (Tab to Screen)
-- Rules
-- Game
-  
-Flow Navigation (Screen to Screen)
+#### Flow Navigation (Screen to Screen)
 <img width="1341" alt="flow" src="https://github.com/user-attachments/assets/11a1cd02-b99b-4a21-a24c-3228c53e35b1" />
-
+  
 Start => Rules/Settings  
 
 Rules/Settings  => Game  
@@ -77,16 +78,20 @@ Game Over - Win => Rules/Settings
 
 Game Over - Lose => Rules/Settings 
 
+#### Tab Navigation (Tab to Screen)
+- Rules
+- Game
+
 <hr>
 
 ### Wireframes
-Hand sketched wireframes:
+#### Hand sketched wireframes:
 |  Login/Start  | Home/Rules/Settings Page | Game  | Game Over - Win  | Game Over - Lose |
 | -------- | -------- | ----------- | ---------- | ------------- | 
 |  <img width="376" alt="sketched start" src="https://github.com/user-attachments/assets/65bd063d-b77e-4adc-8ac0-d59c6183e1ef" /> | <img width="381" alt="sketched rules" src="https://github.com/user-attachments/assets/f031563b-3b80-4b8a-99e4-242a920cefe9" /> | <img width="390" alt="sketched play" src="https://github.com/user-attachments/assets/8fd3cfb8-0487-496b-8a9e-15547a58f3e0" />  | <img width="384" alt="sketched win" src="https://github.com/user-attachments/assets/db049877-f823-4043-8dcc-52f515872b58" />   |  <img width="359" alt="sketched lose" src="https://github.com/user-attachments/assets/e20ba55f-fe38-49b9-b8e3-10cd1c64d8eb" />  |
 
 
-[BONUS] Digital Wireframes & Mockups: 
+#### [BONUS] Digital Wireframes & Mockups: 
 |  Login/Start  | Home/Rules/Settings Page | Game  | Game Over - Win  | Game Over - Lose |
 | -------- | -------- | ----------- | ---------- | ------------- | 
 | <img width="385" alt="WF start" src="https://github.com/user-attachments/assets/f3cd5856-32c8-4fcb-a45b-f9fe66ff2ae5" />  |  <img width="385" alt="WF rules" src="https://github.com/user-attachments/assets/b9c352bf-8215-44da-9b8a-a2cdbb57dc22" />  |  <img width="385" alt="WF game" src="https://github.com/user-attachments/assets/7986281c-0d3c-4660-8f41-2f5d41693c3f" />  | <img width="384" alt="WF win" src="https://github.com/user-attachments/assets/8b4ca488-c58c-4585-9449-1dc5d984938a" />  | <img width="385" alt="WF lose" src="https://github.com/user-attachments/assets/94805561-c880-42ee-8528-ec5a996fb427" />   | 
@@ -114,10 +119,9 @@ Hand sketched wireframes:
 | difficuly | GameSequenceDifficulty (enum) | Increased difficulty with longer sequences. |
 | speed | GameSpeed (enum) | Increases speed of animation for more challenge play. | 
 
-
-### Future Enhancements
--[] Paw timer counts down between each move, maybe start a 5 paws (seconds) for each move and increased up to max 9 paws (seconds) for more difficult levels.
--[] Add optional different meow sounds for each cat.
--[] Add more levels.
--[] Bug fix: Speed setting needs to reset to normal or remain at previous setting when restart a game.
--[X] Bug fix: Disable recognizing user tap before push play button.
+### Sprint Planning
+Sprint 1: Start to build UI for start screen: add pictures
+Sprint 2: Build Launch screen, game screen
+Sprint 3: Build Rules/Settings screen and win/lose screens
+Sprint 4: UI updates and Initiate game Logic
+Sprint 5: Bug fixes for MVP
